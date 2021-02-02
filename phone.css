@@ -1,0 +1,63 @@
+@media only screen and (max-width: 375px){
+    .container{
+        width: 90%;
+        padding: 0px;
+        grid-template-areas: 
+        "container-left"
+        "container-rigth"
+        "review";
+    }
+    .container-left{
+        text-align: center;
+        height: 350px;
+        margin: auto;
+        padding-top: 80px;
+    }
+    .container-left h1{
+        font-size: 35px;
+        max-width: 340px;
+    }
+    .container-left p{
+        font-size: 13px;
+        max-width: 340px;
+    }
+    .container-right{
+        max-width: 340px;
+        margin: auto;
+        padding-top: 0px;
+    }
+    .container-right .ratings{
+        width: 340px;
+        margin-left: 0px;
+        padding: 0px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ratings .stars{
+        margin: 15px auto 0px auto;
+        font-size: 15px;
+    }
+    .ratings span{
+        margin: auto;
+        font-size: 13px;
+    }
+    .review{
+        grid-template-areas: 
+        "reviews"
+        "reviews"
+        "reviews";
+        width: 100%;
+        margin: auto;
+    }
+    .review > :first-child{
+        margin-top: -30px;
+    }
+    .review > :nth-child(2){
+        margin-top: 15px;
+    }
+    .review > :last-child{
+        margin-top: 15px;
+    }
+}
