@@ -15,22 +15,24 @@ body{
 body::before{
     content: '';
     position: absolute;
-    top: 0px;
-    left: 0px;
-    background: url('../images/bg-pattern-top-desktop.svg');
+    height: 100%;
+    width: 100%;
+    background: url('../images/bg-pattern-top-desktop.svg') no-repeat;
+    overflow: hidden !important;
 }
 body::after{
     content: '';
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background: url('../images/bg-pattern-bottom-desktop.svg');
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    transform: translate(20%, 10%);
+    background: url('../images/bg-pattern-bottom-desktop.svg') no-repeat;
 }
 
 
 .container{
     width: 85%;
-    height: 90vh;
+    height: 100%;
     display: grid;
     grid-template-areas: 
     "container-left container-right"
@@ -98,6 +100,7 @@ body::after{
 }
 .reviews{
     max-width: 350px;
+    max-height: 200px;
     border-radius: 15px;
     padding: 30px;
     background: hsl(300, 43%, 22%);
